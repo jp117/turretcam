@@ -1,38 +1,38 @@
-//! Icons: Segoe Fluent Icons glyphs (system font) for generic actions, and hand-drawn
+//! Icons: Phosphor icon-font glyphs (bundled, MIT) for generic actions, and hand-drawn
 //! vector icons for the CAM tools that no icon font has.
 
 use crate::theme;
 use eframe::egui::{self, pos2, vec2, Color32, Painter, Pos2, Rect, Shape, Stroke};
 
-// Segoe Fluent Icons code points (verified by rendering the font)
-pub const ADD: &str = "\u{E710}";
-pub const DELETE: &str = "\u{E74D}";
-pub const COPY: &str = "\u{E8C8}";
-pub const FOLDER: &str = "\u{E8B7}";
-pub const SAVE: &str = "\u{E74E}";
-pub const IMPORT: &str = "\u{E8B5}";
-pub const DOWNLOAD: &str = "\u{E896}";
-pub const UNDO: &str = "\u{E7A7}";
-pub const REDO: &str = "\u{E7A6}";
-pub const SETTINGS: &str = "\u{E713}";
-pub const PLAY: &str = "\u{E768}";
-pub const PAUSE: &str = "\u{E769}";
-pub const PREV: &str = "\u{E892}";
-pub const NEXT: &str = "\u{E893}";
-pub const CHECK: &str = "\u{E73E}";
-pub const WARNING: &str = "\u{E7BA}";
-pub const ERROR: &str = "\u{E783}";
-pub const FIT: &str = "\u{E740}";
-pub const ROTATE: &str = "\u{E7AD}";
-pub const CODE: &str = "\u{E943}";
-pub const PROCESS: &str = "\u{E9F5}";
-pub const LAYERS: &str = "\u{E81E}";
-pub const TOOLBOX: &str = "\u{EC7A}";
-pub const GRID: &str = "\u{E80A}";
-pub const DOCUMENT: &str = "\u{E8A5}";
-pub const CHEVRON: &str = "\u{E76C}";
-pub const SYNC: &str = "\u{E895}";
-pub const MACHINE: &str = "\u{E7F8}";
+// Phosphor Icons (regular) code points, from the package's style.css. Name in the comment.
+pub const ADD: &str = "\u{E3D4}"; // plus
+pub const DELETE: &str = "\u{E4A6}"; // trash
+pub const COPY: &str = "\u{E1CA}"; // copy
+pub const FOLDER: &str = "\u{E256}"; // folder-open
+pub const SAVE: &str = "\u{E248}"; // floppy-disk
+pub const IMPORT: &str = "\u{E232}"; // file-arrow-down
+pub const DOWNLOAD: &str = "\u{E20C}"; // download-simple
+pub const UNDO: &str = "\u{E038}"; // arrow-counter-clockwise
+pub const REDO: &str = "\u{E036}"; // arrow-clockwise
+pub const SETTINGS: &str = "\u{E272}"; // gear-six
+pub const PLAY: &str = "\u{E3D0}"; // play
+pub const PAUSE: &str = "\u{E39E}"; // pause
+pub const PREV: &str = "\u{E5A4}"; // skip-back
+pub const NEXT: &str = "\u{E5A6}"; // skip-forward
+pub const CHECK: &str = "\u{E184}"; // check-circle
+pub const WARNING: &str = "\u{E4E0}"; // warning
+pub const ERROR: &str = "\u{E4F8}"; // x-circle
+pub const FIT: &str = "\u{E626}"; // frame-corners
+pub const ROTATE: &str = "\u{E016}"; // arrow-arc-right
+pub const CODE: &str = "\u{E1BC}"; // code
+pub const PROCESS: &str = "\u{E2DE}"; // lightning
+pub const LAYERS: &str = "\u{E466}"; // stack
+pub const TOOLBOX: &str = "\u{ECA0}"; // toolbox
+pub const GRID: &str = "\u{E296}"; // grid-four
+pub const DOCUMENT: &str = "\u{E23A}"; // file-text
+pub const CHEVRON: &str = "\u{E13A}"; // caret-right
+pub const SYNC: &str = "\u{E094}"; // arrows-clockwise
+pub const MACHINE: &str = "\u{E760}"; // factory
 
 /// CAM tools drawn as vector icons.
 #[derive(Clone, Copy, PartialEq, Eq, Debug)]

@@ -1,5 +1,5 @@
-//! TurretCAM visual design: dark palette, Windows 11 fonts (loaded from the system at
-//! runtime, nothing bundled), spacing and widget styling.
+//! TurretCAM visual design: dark palette, bundled fonts (Inter, JetBrains Mono, Phosphor
+//! icons; the same on every OS), spacing and widget styling.
 
 use eframe::egui::{self, Color32, CornerRadius, FontData, FontDefinitions, FontFamily, FontId, Stroke, TextStyle};
 use std::sync::Arc;
@@ -51,10 +51,11 @@ pub fn tool_colour(i: usize) -> Color32 {
 // ---- fonts -----------------------------------------------------------------------------
 pub const ICONS: &str = "icons";
 
-fn system_font(names: &[&str]) -> Option<Vec<u8>> {
-    let dir = std::env::var("WINDIR").map(|w| format!("{}\\Fonts", w)).unwrap_or_else(|_| r"C:\Windows\Fonts".into());
-    names.iter().find_map(|n| std::fs::read(format!("{}\\{}", dir, n)).ok())
-}
+// Bundled so the app looks the same on Windows, macOS and Linux (licences in ../fonts/).
+const INTER: &[u8] = include_bytes!("../fonts/Inter-Regular.ttf");
+const INTER_SEMIBOLD: &[u8] = include_bytes!("../fonts/Inter-SemiBold.ttf");
+const MONO: &[u8] = include_bytes!("../fonts/JetBrainsMono-Regular.ttf");
+const PHOSPHOR: &[u8] = include_bytes!("../fonts/Phosphor.ttf");
 
 pub fn icon_font(size: f32) -> FontId {
     FontId::new(size, FontFamily::Name(ICONS.into()))
@@ -62,31 +63,22 @@ pub fn icon_font(size: f32) -> FontId {
 
 pub fn install(ctx: &egui::Context) {
     let mut fonts = FontDefinitions::default();
-    if let Some(ui) = system_font(&["segoeui.ttf", "SegUIVar.ttf"]) {
-        fonts.font_data.insert("ui".into(), Arc::new(FontData::from_owned(ui)));
-        fonts.families.get_mut(&FontFamily::Proportional).unwrap().insert(0, "ui".into());
-    }
-    if let Some(b) = system_font(&["segoeuisb.ttf", "seguisb.ttf", "segoeuib.ttf"]) {
-        fonts.font_data.insert("ui-bold".into(), Arc::new(FontData::from_owned(b)));
-        fonts.families.insert(FontFamily::Name("bold".into()), vec!["ui-bold".into(), "ui".into()]);
-    } else {
-        fonts.families.insert(FontFamily::Name("bold".into()), fonts.families[&FontFamily::Proportional].clone());
-    }
-    if let Some(m) = system_font(&["CascadiaMono.ttf", "consola.ttf"]) {
-        fonts.font_data.insert("mono".into(), Arc::new(FontData::from_owned(m)));
-        fonts.families.get_mut(&FontFamily::Monospace).unwrap().insert(0, "mono".into());
-    }
-    match system_font(&["SegoeIcons.ttf", "segmdl2.ttf"]) {
-        Some(i) => {
-            fonts.font_data.insert(ICONS.into(), Arc::new(FontData::from_owned(i)));
-            fonts.families.insert(FontFamily::Name(ICONS.into()), vec![ICONS.into()]);
-            // also a fallback so icon glyphs can sit inside normal labels
-            fonts.families.get_mut(&FontFamily::Proportional).unwrap().push(ICONS.into());
-        }
-        None => {
-            fonts.families.insert(FontFamily::Name(ICONS.into()), fonts.families[&FontFamily::Proportional].clone());
-        }
-    }
+    let mut add = |name: &str, bytes: &'static [u8]| {
+        fonts.font_data.insert(name.into(), Arc::new(FontData::from_static(bytes)));
+    };
+    add("ui", INTER);
+    add("ui-bold", INTER_SEMIBOLD);
+    add("mono", MONO);
+    add(ICONS, PHOSPHOR);
+    // egui's own fonts stay behind ours as fallbacks (symbols, emoji)
+    fonts.families.get_mut(&FontFamily::Proportional).unwrap().insert(0, "ui".into());
+    // icons right after Inter, so a glyph inside a normal label never hits egui's own icon font
+    fonts.families.get_mut(&FontFamily::Proportional).unwrap().insert(1, ICONS.into());
+    fonts.families.get_mut(&FontFamily::Monospace).unwrap().insert(0, "mono".into());
+    let mut bold = fonts.families[&FontFamily::Proportional].clone();
+    bold.insert(0, "ui-bold".into());
+    fonts.families.insert(FontFamily::Name("bold".into()), bold);
+    fonts.families.insert(FontFamily::Name(ICONS.into()), vec![ICONS.into()]);
     ctx.set_fonts(fonts);
 
     ctx.global_style_mut(|s| {

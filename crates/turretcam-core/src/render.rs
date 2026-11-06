@@ -28,7 +28,7 @@ pub fn program_svg(prog: &Program, m: Option<&Machine>, scale: f64) -> String {
     let ht = (sy + 2.0 * margin) * scale + 24.0 + 16.0 * legend_rows as f64;
     let t = |x: f64, y: f64| ((x + margin) * scale, (sy + margin - y) * scale + 22.0);
     let mut o = String::new();
-    let _ = write!(o, r##"<svg xmlns="http://www.w3.org/2000/svg" width="{:.0}" height="{:.0}" font-family="Segoe UI,Arial" font-size="12"><rect width="100%" height="100%" fill="#fff"/>"##, w, ht);
+    let _ = write!(o, r##"<svg xmlns="http://www.w3.org/2000/svg" width="{:.0}" height="{:.0}" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12"><rect width="100%" height="100%" fill="#fff"/>"##, w, ht);
     let title = format!("{}  {}", h.cnc_name.clone().unwrap_or_default(), h.job.join(" / "));
     let _ = write!(o, r#"<text x="6" y="15" font-weight="600">{}</text>"#, esc(&title));
     let (x0, y0) = t(0.0, sy);

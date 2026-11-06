@@ -119,7 +119,12 @@ fn station_panel(app: &mut App, ui: &mut egui::Ui) {
                 ui.end_row();
                 ui.label(RichText::new("Last used").color(theme::TEXT_DIM));
                 let cur = m.is_current(st.station, &today());
-                ui.label(RichText::new(&mt.last_used).color(if cur { theme::TEXT } else { theme::WARN }));
+                let when = match mt.last_used.as_str() {
+                    "" => "not recorded",
+                    "override" => "pinned by hand",
+                    d => d,
+                };
+                ui.label(RichText::new(when).color(if cur { theme::TEXT } else { theme::WARN }));
                 ui.end_row();
                 ui.label(RichText::new("Clamp clearance").color(theme::TEXT_DIM));
                 ui.label(format!("±{} in, below Y {} in", st.clamp_zone.left, st.clamp_zone.top));
@@ -208,7 +213,7 @@ fn machine_panel(app: &mut App, ui: &mut egui::Ui) {
                 ui.end_row();
                 ui.label(RichText::new("Export folder").color(theme::TEXT_DIM));
                 let mut od = p.output_dir.clone().unwrap_or_default();
-                if ui.add(egui::TextEdit::singleline(&mut od).hint_text(r"S:\Punch Machines\CNC Code\M1225")).changed() {
+                if ui.add(egui::TextEdit::singleline(&mut od).hint_text("folder the machine loads programs from")).changed() {
                     p.output_dir = if od.trim().is_empty() { None } else { Some(od) };
                 }
                 ui.end_row();

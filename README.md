@@ -30,7 +30,7 @@ For real work, keep your shop's profile in its own (private) folder or repo and 
 
 ## The app
 
-Dark, Windows 11-native design (Segoe UI and Segoe Fluent Icons loaded from Windows). Work runs left to right through three steps, with one primary button that always shows the next thing to do: **Generate program**, then **Export CNC**, or the error count if checks fail.
+Dark design with bundled fonts (Inter, JetBrains Mono and Phosphor icons), so it looks the same on Windows, macOS and Linux. Work runs left to right through three steps, with one primary button that always shows the next thing to do: **Generate program**, then **Export CNC**, or the error count if checks fail.
 
 | Step | What you do there |
 |---|---|
@@ -91,3 +91,5 @@ MIT or Apache-2.0, at your option (`LICENSE-MIT`, `LICENSE-APACHE`).
 ## Third-party
 
 acadrust (DWG reading) is MPL-2.0, used unmodified from crates.io. Other dependencies are MIT or Apache-2.0.
+
+Bundled fonts in `crates/turretcam-app/fonts/`: Inter and JetBrains Mono (SIL Open Font License 1.1) and Phosphor Icons (MIT). Their licences are next to them.

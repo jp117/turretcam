@@ -29,7 +29,7 @@ pub fn titled_card<R>(ui: &mut Ui, icon: &str, title: &str, add: impl FnOnce(&mu
     })
 }
 
-/// Square icon button using a Fluent glyph.
+/// Square icon button using a Phosphor glyph.
 pub fn icon_button(ui: &mut Ui, glyph: &str, tip: &str, selected: bool) -> Response {
     let (r, resp) = ui.allocate_exact_size(vec2(32.0, 30.0), Sense::click());
     let bg = if selected {
@@ -86,7 +86,13 @@ pub fn primary(ui: &mut Ui, glyph: &str, text: &str, fill: Color32, enabled: boo
 
 /// Secondary button with an icon and a label.
 pub fn button(ui: &mut Ui, glyph: &str, text: &str) -> Response {
-    ui.add(egui::Button::new(RichText::new(format!("{}  {}", glyph, text))))
+    // icon and label in their own fonts, so the glyph always comes from the icon font
+    let col = ui.visuals().text_color();
+    let fmt = |font_id: FontId| egui::TextFormat { font_id, color: col, valign: egui::Align::Center, ..Default::default() };
+    let mut job = egui::text::LayoutJob::default();
+    job.append(glyph, 0.0, fmt(theme::icon_font(14.0)));
+    job.append(text, 7.0, fmt(FontId::proportional(13.5)));
+    ui.add(egui::Button::new(job))
 }
 
 /// Small rounded label, e.g. a tool station.
