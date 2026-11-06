@@ -1,0 +1,82 @@
+{
+  "id": "m1225",
+  "name": "Strippit M-1225 Thick 47 (demo)",
+  "post": "strippit_pststr05",
+  "control": "Lantek postprocessor PSTSTR05",
+  "units": "inch",
+  "source": "Demo definition with typical M-1225 Thick 47 limits. Generate your own with `tcam machine-from-lvd` from your LVD package and program archive before cutting.",
+  "reset_position": [
+    97.0079,
+    49.6063
+  ],
+  "work_zone": {
+    "x": 98.4252,
+    "y": 49.2126,
+    "offset_left": 1.5,
+    "offset_right": 1.5,
+    "offset_top": 0.4331,
+    "offset_bottom": 0.7913
+  },
+  "proven_max_x": 97.0624,
+  "clamps": {
+    "count": 3,
+    "default_positions": [
+      12.0,
+      36.0
+    ],
+    "ranges": [
+      {
+        "min_x": 11.811,
+        "max_x": 70.8661
+      },
+      {
+        "min_x": 19.685,
+        "max_x": 78.7402
+      },
+      {
+        "min_x": 27.5591,
+        "max_x": 86.6142
+      }
+    ],
+    "general_dead_zone": {
+      "left": 4.378,
+      "right": 4.378,
+      "top": 3.315
+    },
+    "min_gap": 8.0
+  },
+  "press_capacity_kg": 20000.0,
+  "nibble_tolerance_in": 0.0079,
+  "time_model": {
+    "constant": 5.3682,
+    "per_hit": 0.1572,
+    "per_tool_change": 1.5832,
+    "per_inch_travel": 0.0263,
+    "per_index_change": 0.2518,
+    "per_nibble_hit": -0.0451
+  },
+  "shear_ksi": {
+    "ALUMINUM": 25.0,
+    "COPPER": 30.0,
+    "SS": 75.0,
+    "ST": 50.0
+  },
+  "stale_tool_days": 365,
+  "reposition": {
+    "code": "G70 X_ Y_ / M03 / G91 / Y<retract> / X<shift> / G90 / M04 / F1",
+    "hold_downs": [
+      {
+        "radius": 0.9449,
+        "x": -11.5787,
+        "y": 2.6378
+      },
+      {
+        "radius": 0.9449,
+        "x": 11.5787,
+        "y": 2.6378
+      }
+    ],
+    "y_retract": 0.05
+  },
+  "post_parameters": {}
+}

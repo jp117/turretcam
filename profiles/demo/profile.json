@@ -1,0 +1,24 @@
+{
+  "id": "demo",
+  "name": "Demo shop",
+  "user": "",
+  "machines": [
+    "m1225"
+  ],
+  "default_machine": "m1225",
+  "next_program_number": 9001,
+  "output_dir": null,
+  "oda_converter": null,
+  "defaults": {
+    "material": "ST 42",
+    "thickness": 0.0315,
+    "sheet": [
+      96.0,
+      48.0
+    ],
+    "tab": 0.025,
+    "tab_every": 24.0,
+    "min_overlap": 0.06,
+    "nest_gap": 0.5
+  }
+}

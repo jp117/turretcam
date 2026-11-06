@@ -1,0 +1,964 @@
+{
+  "turret": "STRIPPIT THICK 47",
+  "stations": [
+    {
+      "station": 1,
+      "size_class": "D",
+      "max_tool_in": 3.5,
+      "autoindex": true,
+      "key_angles": [],
+      "clamp_zone": {
+        "left": 4.378,
+        "right": 4.378,
+        "top": 3.315
+      },
+      "mounted": {
+        "tool": "RE-3X0.25",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 2,
+      "size_class": "B",
+      "max_tool_in": 1.25,
+      "autoindex": false,
+      "key_angles": [
+        0.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.8465,
+        "right": 2.8465,
+        "top": 1.7835
+      },
+      "mounted": {
+        "tool": "OB-0.5X0.25_90",
+        "last_used": "",
+        "mount_angle": 90.0
+      },
+      "history": []
+    },
+    {
+      "station": 3,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        0.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "OB-0.5X0.25",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 4,
+      "size_class": "B",
+      "max_tool_in": 1.25,
+      "autoindex": false,
+      "key_angles": [
+        90.0,
+        180.0
+      ],
+      "clamp_zone": {
+        "left": 2.8465,
+        "right": 2.8465,
+        "top": 1.7835
+      },
+      "mounted": {
+        "tool": "OB-1X0.188",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 5,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        90.0,
+        180.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "RD-0.1",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 6,
+      "size_class": "C",
+      "max_tool_in": 2.0,
+      "autoindex": false,
+      "key_angles": [
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 3.6575,
+        "right": 3.6575,
+        "top": 2.5945
+      },
+      "mounted": {
+        "tool": "RE-1X0.125",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 7,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        180.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "RD-0.219",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 8,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        90.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "RD-0.4375",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 9,
+      "size_class": "B",
+      "max_tool_in": 1.248,
+      "autoindex": false,
+      "key_angles": [
+        0.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.8465,
+        "right": 2.8465,
+        "top": 1.7835
+      },
+      "mounted": {
+        "tool": "RD-0.625",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 10,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        0.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "RD-0.5",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 11,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        180.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "RD-0.3125",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 12,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        90.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "SQ-0.3125",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 13,
+      "size_class": "C",
+      "max_tool_in": 2.0,
+      "autoindex": false,
+      "key_angles": [
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 3.6575,
+        "right": 3.6575,
+        "top": 2.5945
+      },
+      "mounted": {
+        "tool": "RE-1X0.125_90",
+        "last_used": "",
+        "mount_angle": 90.0
+      },
+      "history": []
+    },
+    {
+      "station": 14,
+      "size_class": "B",
+      "max_tool_in": 1.248,
+      "autoindex": false,
+      "key_angles": [
+        90.0,
+        180.0
+      ],
+      "clamp_zone": {
+        "left": 2.8465,
+        "right": 2.8465,
+        "top": 1.7835
+      },
+      "mounted": {
+        "tool": "RD-0.75",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 15,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        90.0,
+        180.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "RD-0.375",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 16,
+      "size_class": "B",
+      "max_tool_in": 1.25,
+      "autoindex": false,
+      "key_angles": [
+        0.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.8465,
+        "right": 2.8465,
+        "top": 1.7835
+      },
+      "mounted": {
+        "tool": "RD-0.875",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 17,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        0.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "RD-0.171",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 18,
+      "size_class": "D",
+      "max_tool_in": 3.5,
+      "autoindex": true,
+      "key_angles": [],
+      "clamp_zone": {
+        "left": 4.378,
+        "right": 4.378,
+        "top": 3.315
+      },
+      "mounted": {
+        "tool": "RE-3X0.125",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 19,
+      "size_class": "B",
+      "max_tool_in": 1.25,
+      "autoindex": false,
+      "key_angles": [
+        90.0,
+        180.0
+      ],
+      "clamp_zone": {
+        "left": 2.8465,
+        "right": 2.8465,
+        "top": 1.7835
+      },
+      "mounted": {
+        "tool": "SQ-0.5",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 20,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        90.0,
+        180.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.7835
+      },
+      "mounted": null,
+      "history": []
+    },
+    {
+      "station": 21,
+      "size_class": "B",
+      "max_tool_in": 1.248,
+      "autoindex": false,
+      "key_angles": [
+        0.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.8465,
+        "right": 2.8465,
+        "top": 1.7835
+      },
+      "mounted": {
+        "tool": "SQ-0.875",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 22,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        0.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "SQ-0.25",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 23,
+      "size_class": "B",
+      "max_tool_in": 1.248,
+      "autoindex": false,
+      "key_angles": [
+        90.0,
+        180.0
+      ],
+      "clamp_zone": {
+        "left": 2.8465,
+        "right": 2.8465,
+        "top": 1.7835
+      },
+      "mounted": {
+        "tool": "OB-1X0.5625",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 24,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        90.0,
+        180.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": null,
+      "history": []
+    },
+    {
+      "station": 25,
+      "size_class": "B",
+      "max_tool_in": 1.25,
+      "autoindex": false,
+      "key_angles": [
+        0.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.8465,
+        "right": 2.8465,
+        "top": 1.7835
+      },
+      "mounted": {
+        "tool": "RD-1",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 26,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        0.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "RD-0.281",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 27,
+      "size_class": "B",
+      "max_tool_in": 1.25,
+      "autoindex": false,
+      "key_angles": [
+        90.0,
+        180.0
+      ],
+      "clamp_zone": {
+        "left": 2.8465,
+        "right": 2.8465,
+        "top": 1.7835
+      },
+      "mounted": {
+        "tool": "SQ-0.375",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 28,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        90.0,
+        180.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "OB-0.375X0.281_90",
+        "last_used": "",
+        "mount_angle": 90.0
+      },
+      "history": []
+    },
+    {
+      "station": 29,
+      "size_class": "B",
+      "max_tool_in": 1.25,
+      "autoindex": false,
+      "key_angles": [
+        0.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.8465,
+        "right": 2.8465,
+        "top": 1.7835
+      },
+      "mounted": {
+        "tool": "RD-0.6875",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 30,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        0.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "RD-0.14",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 31,
+      "size_class": "D",
+      "max_tool_in": 3.5,
+      "autoindex": true,
+      "key_angles": [],
+      "clamp_zone": {
+        "left": 4.378,
+        "right": 4.378,
+        "top": 3.315
+      },
+      "mounted": {
+        "tool": "SQ-2",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 32,
+      "size_class": "B",
+      "max_tool_in": 1.25,
+      "autoindex": false,
+      "key_angles": [
+        90.0,
+        180.0
+      ],
+      "clamp_zone": {
+        "left": 2.8465,
+        "right": 2.8465,
+        "top": 1.7835
+      },
+      "mounted": {
+        "tool": "RE-1X0.5_90",
+        "last_used": "",
+        "mount_angle": 90.0
+      },
+      "history": []
+    },
+    {
+      "station": 33,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        90.0,
+        180.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "RD-0.203",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 34,
+      "size_class": "B",
+      "max_tool_in": 1.25,
+      "autoindex": false,
+      "key_angles": [
+        0.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.8465,
+        "right": 2.8465,
+        "top": 1.7835
+      },
+      "mounted": {
+        "tool": "RD-1.184",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 35,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        0.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": null,
+      "history": []
+    },
+    {
+      "station": 36,
+      "size_class": "C",
+      "max_tool_in": 2.0,
+      "autoindex": false,
+      "key_angles": [
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 3.6575,
+        "right": 3.6575,
+        "top": 2.5945
+      },
+      "mounted": {
+        "tool": "RD-2",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 37,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        180.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "RD-0.406",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 38,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        90.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "RD-0.125",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 39,
+      "size_class": "B",
+      "max_tool_in": 1.25,
+      "autoindex": false,
+      "key_angles": [
+        90.0,
+        180.0
+      ],
+      "clamp_zone": {
+        "left": 2.8465,
+        "right": 2.8465,
+        "top": 1.7835
+      },
+      "mounted": {
+        "tool": "OB-1X0.188_90",
+        "last_used": "",
+        "mount_angle": 90.0
+      },
+      "history": []
+    },
+    {
+      "station": 40,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        90.0,
+        180.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "RD-0.344",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 41,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        180.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "RD-0.188",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 42,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        90.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": null,
+      "history": []
+    },
+    {
+      "station": 43,
+      "size_class": "C",
+      "max_tool_in": 2.0,
+      "autoindex": false,
+      "key_angles": [
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 3.6575,
+        "right": 3.6575,
+        "top": 2.5945
+      },
+      "mounted": {
+        "tool": "SQ-1.5",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 44,
+      "size_class": "B",
+      "max_tool_in": 1.25,
+      "autoindex": false,
+      "key_angles": [
+        0.0,
+        45.0,
+        135.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 3.6575,
+        "right": 3.6575,
+        "top": 2.5945
+      },
+      "mounted": {
+        "tool": "OB-1X0.5625_90",
+        "last_used": "",
+        "mount_angle": 90.0
+      },
+      "history": []
+    },
+    {
+      "station": 45,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        0.0,
+        270.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "SQ-0.125",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 46,
+      "size_class": "B",
+      "max_tool_in": 1.25,
+      "autoindex": false,
+      "key_angles": [
+        90.0,
+        180.0,
+        225.0,
+        315.0
+      ],
+      "clamp_zone": {
+        "left": 2.8465,
+        "right": 2.8465,
+        "top": 1.7835
+      },
+      "mounted": {
+        "tool": "SQ-0.75",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    },
+    {
+      "station": 47,
+      "size_class": "A",
+      "max_tool_in": 0.5,
+      "autoindex": false,
+      "key_angles": [
+        90.0,
+        180.0
+      ],
+      "clamp_zone": {
+        "left": 2.4094,
+        "right": 2.4094,
+        "top": 1.3465
+      },
+      "mounted": {
+        "tool": "RD-0.25",
+        "last_used": "",
+        "mount_angle": 0.0
+      },
+      "history": []
+    }
+  ],
+  "note": "Demo tool load (made up). Station sizes, key angles and clamp zones are the Thick 47 turret's."
+}

@@ -1,0 +1,103 @@
+{
+ "version": 1,
+ "name": "Demo meter cover 2-up",
+ "job": "DEMO METER COVER 30X20 2-UP",
+ "machine": "m1225",
+ "program_number": 9001,
+ "sheet": {
+  "x": 66,
+  "y": 26,
+  "thickness": 0.0315,
+  "material": "ST 42",
+  "qty": 1
+ },
+ "clamps": null,
+ "parts": [
+  {
+   "id": "P1",
+   "name": "Meter cover 30x20",
+   "outline": {
+    "type": "rect",
+    "w": 30,
+    "h": 20,
+    "tabs": true
+   },
+   "notes": "",
+   "source": "",
+   "features": [
+    {
+     "type": "hole",
+     "x": 1,
+     "y": 1,
+     "dia": 0.25
+    },
+    {
+     "type": "hole",
+     "x": 29,
+     "y": 1,
+     "dia": 0.25
+    },
+    {
+     "type": "hole",
+     "x": 1,
+     "y": 19,
+     "dia": 0.25
+    },
+    {
+     "type": "hole",
+     "x": 29,
+     "y": 19,
+     "dia": 0.25
+    },
+    {
+     "type": "hole",
+     "x": 8,
+     "y": 12,
+     "dia": 4.125
+    },
+    {
+     "type": "grid",
+     "x": 20,
+     "y": 13,
+     "dx": 0.5,
+     "dy": 1.25,
+     "nx": 13,
+     "ny": 4,
+     "shape": {
+      "kind": "OB",
+      "w": 0.188,
+      "h": 1.0
+     }
+    },
+    {
+     "type": "rect",
+     "x0": 15,
+     "y0": 3,
+     "x1": 27,
+     "y1": 7.5,
+     "tabs": true
+    }
+   ]
+  }
+ ],
+ "placements": [
+  {
+   "part": "P1",
+   "x": 1.5,
+   "y": 4,
+   "rot": 0
+  },
+  {
+   "part": "P1",
+   "x": 34.5,
+   "y": 4,
+   "rot": 0
+  }
+ ],
+ "options": {
+  "tab": 0.025,
+  "tab_every": 24,
+  "min_overlap": 0.06,
+  "allow_stale_tools": false
+ }
+}

@@ -1,0 +1,5 @@
+target/
+*.pdb
+/out/
+/tmp/
+profiles/*/machines/*/turret_override.json

@@ -1,0 +1,7 @@
+# CNC programs must keep CRLF exactly as the machine expects
+*.CNC binary
+*.cnc binary
+*.NC binary
+*.dxf binary
+*.DXF binary
+*.dwg binary
